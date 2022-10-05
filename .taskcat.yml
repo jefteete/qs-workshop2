@@ -9,7 +9,7 @@ tests:
   default:
     template: ./templates/master.template.yaml
     regions:
-    - us-west-1
+    - us-east-1
 
     
     parameters:
@@ -17,7 +17,7 @@ tests:
       EmailAddress: jefteete@cisco.com
       KeyPairName: qsworkshop
       WebserverCIDR: "0.0.0.0/0"
-      QSS3KeyPrefix: "qs-workshop/"
+      QSS3KeyPrefix: "quickstart-taskcat-ci/"
       QSS3BucketRegion: "$[taskcat_current_region]"
-      QSS3BucketName: "$[taskcat_autobucket]"
+      QSS3BucketName: "$[aws-quickstart]"
 
